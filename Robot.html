@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 5</title>
+    <meta charset="utf-8" />
+</head>
+
+<body onload="initWebGL();">
+    <center>
+        <strong> Robot Man <br /> </strong>
+        <subtitle> George Muresan <br /> </subtitle>
+
+        <canvas id="draw_surface" width="800" height="600">
+            Browser does not support WebGL
+        </canvas>
+
+        <form>
+            Rotate Body: <input type="range" name="z" min="-90" max="90" value="0" class="slider" id="TorsoID" step="5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            Zoom: <input type="range" name="z" min="-25" max="-4" value="-15" class="slider" id="TransXID" step="1" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            Arms Z-axis: <input type="range" name="z" min="-55" max="40" value="0" class="slider" id="ArmsID" step="5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            Head Rotate: <input type="range" name="z" min="-55" max="55" value="0" class="slider" id="HeadID" step="5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            Head Tilt: <input type="range" name="z" min="-60" max="60" value="0" class="slider" id="HeadYID" step="5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            RightHand <input type="range" name="z" min="-2" max="2" value="0" class="slider" id="RHandID" step=".5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+        <form>
+            LeftHand <input type="range" name="z" min="-2" max="2" value="0" class="slider" id="LHandID" step=".5" />
+            <output id="SlideidDisplay"></output>
+        </form>
+
+        <script src="gl-matrix.js"></script>
+        <script src="upDateRobot.js"></script>
+    </center>
+</body>
+</html>
